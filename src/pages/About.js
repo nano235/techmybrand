@@ -36,7 +36,7 @@ function About() {
                 <div className="col-lg-4 offset-lg-1">
                   <div className="modern-number-01">
                     <h2 className="heading  me-5">
-                      <span className="mark-text">8+</span>Years’ Experience in
+                      <span className="mark-text">10</span>Years’ Experience in
                       IT
                     </h2>
                     <h6 className="heading mt-30">

@@ -25,6 +25,12 @@ import sol3 from "./assets/images/solutions/sol3.webp";
 import sol4 from "./assets/images/solutions/sol4.webp";
 import sol5 from "./assets/images/solutions/sol5.webp";
 import sol6 from "./assets/images/solutions/sol6.webp";
+import bus1 from "./assets/images/business/bus1.webp";
+import bus2 from "./assets/images/business/bus2.webp";
+import bus3 from "./assets/images/business/bus3.webp";
+import bus4 from "./assets/images/business/bus4.webp";
+import bus5 from "./assets/images/business/bus5.webp";
+import bus6 from "./assets/images/business/bus6.webp";
 
 export const navs = [
   {
@@ -33,8 +39,6 @@ export const navs = [
     text: "IT Solutions",
     links: [
       { label: "IT Services", url: "/it-services", id: 100 },
-      { label: "Managed IT Services", url: "/managed-it", id: 101 },
-      { label: "Industries", url: "/industries", id: 102 },
       { label: "Business Solution", url: "/business", id: 103 },
     ],
   },
@@ -42,7 +46,7 @@ export const navs = [
     id: 2,
     page: "Support",
     text: "Support",
-    links: [{ label: "FAQs", url: "/faqs", id: 104 }],
+    links: [{ label: "Contact Us", url: "/contact", id: 106 }],
   },
   {
     id: 3,
@@ -50,7 +54,7 @@ export const navs = [
     text: "Company",
     links: [
       { label: "About Us", url: "/about", id: 105 },
-      { label: "Contact Us", url: "/contact", id: 106 },
+
       { label: "Why choose Us", url: "/choose-us", id: 107 },
     ],
   },
@@ -283,20 +287,59 @@ export const solutions = [
 export const chooseUs = [
   {
     image: blog1,
-    title: "TechMyBrand Management Systems",
+    title: "Consistency",
     url: "/about",
-    text: "Our technical experts have a flair for developing <strong>clean-coded websites</strong> based on customers’ needs, global guidelines and trends.",
+    text: "Consistent high-quality results with robust agile teams and dedicated QA practices.",
   },
   {
     image: image,
     title: "Efficient Database Security",
     url: "/about",
-    text: "Our technical experts have a flair for developing <strong>clean-coded websites</strong> based on customers’ needs, global guidelines and trends.",
+    text: "Consistent high-quality results with robust agile teams and dedicated QA practices. Also, with Transparent project management with maximum adherence to deadlines.",
   },
   {
     image: image3,
-    title: "Reliable Multi-function Technology",
+    title: "Best Practices",
     url: "/about",
-    text: "Our technical experts have a flair for developing <strong>clean-coded websites</strong> based on customers’ needs, global guidelines and trends.",
+    text: "Our technical experts have a flair for developing clean-coded websites based on customers’ needs, global guidelines and trends.",
+  },
+];
+
+export const businessSolutions = [
+  {
+    icon: bus1,
+    title: "IT Design",
+    content:
+      "We provide the most responsive and functional IT design for companies and businesses worldwide.",
+  },
+  {
+    icon: bus2,
+    title: "IT Management",
+    content:
+      "It’s possible to simultaneously manage and transform key information from one server to another. ",
+  },
+  {
+    icon: bus3,
+    title: "Data Security",
+    content:
+      "Back up your database, store in a safe and secure place while still maintaining its accessibility.",
+  },
+  {
+    icon: bus4,
+    title: "Business Reform",
+    content:
+      "We propose feasible &amp; practical plans for successfully transform businesses based on their needs.",
+  },
+  {
+    icon: bus5,
+    title: "Infrastructure Plan",
+    content:
+      "TechMyBrand takes into account all conditions and budgets needed for building infrastructure plan.",
+  },
+  {
+    icon: bus6,
+    title: "FireWall Advancement",
+    content:
+      "Enhancing the strength and security of firewalls to protect online data from malicious sources. ",
   },
 ];

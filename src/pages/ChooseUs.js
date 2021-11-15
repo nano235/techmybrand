@@ -37,7 +37,7 @@ function ChooseUs() {
                 <div className="col-lg-4 offset-lg-1">
                   <div className="modern-number-01  mt-30">
                     <h2 className="heading  me-5">
-                      <span className="mark-text">38</span>Years’ Experience in
+                      <span className="mark-text">10</span>Years’ Experience in
                       IT
                     </h2>
                     <h3 className="heading mt-30">
@@ -61,12 +61,12 @@ function ChooseUs() {
                           data-wow-duration="0.5s"
                           data-wow-delay=".3s"
                           role="progressbar"
-                          style={{ width: "81%" }}
+                          style={{ width: "89%" }}
                           aria-valuenow="85"
                           aria-valuemin="0"
                           aria-valuemax="100"
                         >
-                          <span className="percent-label">81%</span>
+                          <span className="percent-label">89%</span>
                         </div>
                       </div>
                     </div>
@@ -79,30 +79,30 @@ function ChooseUs() {
                           data-wow-duration="0.7s"
                           data-wow-delay=".5s"
                           role="progressbar"
-                          style={{ width: "72%" }}
+                          style={{ width: "92%" }}
                           aria-valuenow="85"
                           aria-valuemin="0"
                           aria-valuemax="100"
                         >
-                          <span className="percent-label">72%</span>
+                          <span className="percent-label">92%</span>
                         </div>
                       </div>
                     </div>
 
                     <div className="progress-charts ">
-                      <h6 className="heading ">Marketing</h6>
+                      <h6 className="heading ">Codes</h6>
                       <div className="progress">
                         <div
                           className="progress-bar wow fadeInLeft"
                           data-wow-duration="0.8s"
                           data-wow-delay=".8s"
                           role="progressbar"
-                          style={{ width: "89%" }}
+                          style={{ width: "95%" }}
                           aria-valuenow="70"
                           aria-valuemin="0"
                           aria-valuemax="100"
                         >
-                          <span className="percent-label">89%</span>
+                          <span className="percent-label">95%</span>
                         </div>
                       </div>
                     </div>
@@ -115,12 +115,12 @@ function ChooseUs() {
                           data-wow-duration="0.9s"
                           data-wow-delay=".9s"
                           role="progressbar"
-                          style={{ width: "57%" }}
+                          style={{ width: "80%" }}
                           aria-valuenow="90"
                           aria-valuemin="0"
                           aria-valuemax="100"
                         >
-                          <span className="percent-label">57%</span>
+                          <span className="percent-label">80%</span>
                         </div>
                       </div>
                     </div>
@@ -138,7 +138,7 @@ function ChooseUs() {
                     {chooseUs.map((choose, index) => {
                       const { image, title, url, text } = choose;
                       return (
-                        <div className="col-lg-4 col-md-6 mt-30">
+                        <div className="col-lg-4 col-md-6 mt-30" key={index}>
                           <Link
                             to={url}
                             className="box-large-image__wrap wow move-up"

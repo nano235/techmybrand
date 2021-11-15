@@ -1,6 +1,6 @@
 import CardContainer from "../components/cards/CardContainer";
 import HomeHero from "../components/heros/HomeHero";
-import { homeCard } from "../data";
+import { homeCard, ITLongCard } from "../data";
 import { Link } from "react-router-dom";
 import IndustriesCardList from "../components/cards/IndustriesCardList";
 import Testimonials from "../components/cards/Testimonials";
@@ -29,7 +29,7 @@ function Home() {
               <div className="col-lg-4 offset-lg-1">
                 <div className="modern-number-01 me-5">
                   <h2 className="heading">
-                    <span className="mark-text">38</span>Years’ Experience in IT
+                    <span className="mark-text">10</span>Years’ Experience in IT
                   </h2>
                   <h3 className="heading">
                     Learn more about our{" "}
@@ -78,7 +78,9 @@ function Home() {
           </div>
         </div>
         <Testimonials />
-        <LongCard />
+        <div className="feature-icon-wrapper section-space--ptb_80 border-bottom">
+          <LongCard ITLongCard={ITLongCard} />
+        </div>
         <div className="cta-image-area_one section-space--ptb_80 cta-bg-image_one">
           <div className="container">
             <div className="row align-items-center">

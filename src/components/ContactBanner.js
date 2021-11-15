@@ -13,7 +13,7 @@ function ContactBanner() {
             </div>
           </div>
 
-          <div className="col-lg-4 ms-auto">
+          <div className="col-lg-5">
             <div className="contact-info style-two text-left">
               <div className="contact-info-title-wrap text-center">
                 <h3 className="heading  mb-10">4.9/5.0</h3>

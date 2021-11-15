@@ -4,7 +4,7 @@ import ContactBanner from "../components/ContactBanner";
 import BreadCrumb from "../components/heros/BreadCrumb";
 
 function Industries() {
-  return <div className="site-wrapper-reveal">
+  return <div className="site-wrapper-reveal section-space--pt_100">
     <BreadCrumb title="Industries" />
     <div className="feature-icon-wrapper section-space--ptb_100">
       <div className="container">
@@ -23,7 +23,7 @@ function Industries() {
         <div className="section-under-heading text-center section-space--mt_80">
               Challenges are just opportunities in disguise.
               <Link to="/contact">Take the challenge</Link>
-            </div>
+        </div>
       </div>
     </div>
     <ContactBanner />
