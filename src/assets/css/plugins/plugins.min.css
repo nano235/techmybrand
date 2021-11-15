@@ -4885,10 +4885,10 @@ body:not(.lg-from-hash)
   top: 0;
   white-space: nowrap;
 }
-.lg-outer .lg-item {
+/* .lg-outer .lg-item {
   background: url(../../img/loading.html) center center no-repeat;
   display: none !important;
-}
+} */
 .lg-outer.lg-css .lg-current,
 .lg-outer.lg-css3 .lg-current,
 .lg-outer.lg-css3 .lg-next-slide,

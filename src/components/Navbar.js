@@ -16,17 +16,21 @@ function Navbar() {
     }
   }, []);
 
+  const pathname = window.location.pathname;
+
   return (
     <header className="header-area header-area--absolute">
       <div
-        className={`header-bottom-wrap header-sticky ${small && "is-sticky"}`}
+        className={`header-bottom-wrap header-sticky ${
+          small || pathname !== "/" ? "is-sticky" : ""
+        }`}
       >
         <div className="container">
           <div className="row">
             <div className="col-lg-12">
               <div className="header position-relative">
                 <div className="header__logo">
-                  <Link to="\">
+                  <Link to="/">
                     <img
                       src={lightLogo}
                       alt="logo"

@@ -1,4 +1,5 @@
-import React, { useState, useContext, useEffect } from "react";
+import React, { useState, useContext, useLayoutEffect, useRef } from "react";
+import { useCallback } from "react";
 import { navs } from "./data";
 
 const AppContext = React.createContext();
@@ -19,23 +20,23 @@ const AppProvider = ({ children }) => {
     setIsSubmenuOpen(!isSubmenuOpen);
   };
 
-  const openSubmenu = (text, coordinates) => {
-    setIsSubmenuOpen(true);
-  };
+  const container = useRef(0);
+  const scrollHeight = useCallback(() => {
+    // let body = container.current.style;
+    // console.log(body);
+    // let windowSize = window.innerWidth;
+    // if (windowSize <= 991) {
+    //   body.paddingBottom = "0px";
+    // }
+    // if (windowSize > 991) {
+    //   body.paddingBottom = `400px`;
+    // }
+  }, []);
 
-  const closeSubmenu = () => {
-    setIsSubmenuOpen(false);
-  };
-
-  const container = React.useRef();
-  const handleClickOutside = (e) => {
-    if (container.current && !container.current.contains(e.target)) {
-      setIsSidebarOpen(false);
-    }
-  };
-  useEffect(() => {
-    document.addEventListener("mousedown", handleClickOutside);
-    return () => document.removeEventListener("mousedown", handleClickOutside);
+  useLayoutEffect(() => {
+    window.addEventListener("resize", scrollHeight);
+    scrollHeight();
+    return () => window.removeEventListener("resize", scrollHeight);
   });
 
   return (
@@ -47,7 +48,8 @@ const AppProvider = ({ children }) => {
         isSidebarOpen,
         toggleSubmenu,
         isSubmenuOpen,
-        handleClickOutside,
+        setIsSidebarOpen,
+        scrollHeight,
         container,
       }}
     >

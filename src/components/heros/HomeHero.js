@@ -24,11 +24,11 @@ function HomeHero() {
                             Services.
                           </p>
                           <div className="hero-button-group section-space--mt_50">
-                            <Link to="#" className="ht-btn ht-btn-md">
+                            <Link to="/contact" className="ht-btn ht-btn-md">
                               Free consultation
                             </Link>
                             <Link
-                              to="#"
+                              to="/about"
                               className="ht-btn ht-btn-md btn--white"
                             >
                               <span className="btn-icon me-2">
